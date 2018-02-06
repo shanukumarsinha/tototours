@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toto Tours</title>
+    </head>
+  <body>
+
+    <audio src="http://www.noiseaddicts.com/samples_1w72b820/1456.mp3" autoplay loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+<audio src="http://www.noiseaddicts.com/samples_1w72b820/3717.mp3" autoplay loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+<audio src="http://www.noiseaddicts.com/samples_1w72b820/118.mp3" autoplay loop>
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+<input id="stopButton" type="button" value="Stop All Audio" />
+
+<script type="text/javascript">
+	document.getElementById('stopButton').onclick = function() {
+  var sounds = document.getElementsByTagName('audio');
+  for(i=0; i<sounds.length; i++) sounds[i].pause();
+};
+</script>
+ </body>
+</html>
